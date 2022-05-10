@@ -1,9 +1,13 @@
+import Gameboard from "./Gameboard";
+import Keyboard from "./Keyboard";
+
 const Section = () => {
-    return(
-        <main>
-            
-        </main>
-    );
+  return (
+    <>
+      <Gameboard />
+      <Keyboard />
+    </>
+  );
 };
 
 export default Section;
