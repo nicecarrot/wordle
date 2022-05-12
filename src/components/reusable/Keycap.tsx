@@ -6,7 +6,9 @@ interface KeycapProps {
 
 const Keycap = ({ char }: KeycapProps) => {
   return( 
-    <div className={styles.keycap}>{char}</div>
+    <button className={styles.keycap}>
+      {char}
+    </button>
     );
 };
 

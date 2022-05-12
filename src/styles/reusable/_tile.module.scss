@@ -1,0 +1,7 @@
+@import "../variable.module";
+
+.tile {
+    background-color: $tile_color;
+    width: $tile_width;
+    height: $tile_height;
+}

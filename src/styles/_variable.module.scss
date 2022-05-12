@@ -13,7 +13,8 @@ $border_color: hsl(118, 61%, 82%);
 $key_padding_Y: 1rem;
 
 $key_font_size: 1rem;
-$keycap_radius: 4px;
+$keycap_border: 0px;
+$keycap_radius: 6px;
 $keycap_padding_X: 1rem;
 $keycap_padding_Y: 1rem;
 $keycap_color: hsl(214, 9%, 84%);
@@ -22,3 +23,8 @@ $keycap_space: 6px;
 
 //board
 $board_height: 50%;
+
+//tile
+$tile_color: hsl(0, 26%, 67%);
+$tile_width: 20px;
+$tile_height: 20px;

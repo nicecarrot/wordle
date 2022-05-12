@@ -1,6 +1,9 @@
 @import "../_variable.module";
 
 .container{
+    display: grid;
+    justify-self: center;
+    align-items: center;
     height: $board_height;
 }
 

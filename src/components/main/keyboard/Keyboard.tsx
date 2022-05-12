@@ -1,6 +1,6 @@
 import styles from "../../styles/reusable/_key.module.scss";
-import Keycap from "../reusable/Keycap";
-import { KEYBOARD_TOP, KEYBOARD_MID, KEYBOARD_BOT } from "../constants";
+import Keycap from "../../reusable/Keycap";
+import { KEYBOARD_TOP, KEYBOARD_MID, KEYBOARD_BOT } from "../../constants";
 
 const integrateKey = [KEYBOARD_TOP, KEYBOARD_MID, KEYBOARD_BOT];
 

@@ -1,17 +1,19 @@
 @import "../variable.module";
 
-.keyboard_row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: $keycap_space $key_padding_Y;
+.keyboard_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $keycap_space $key_padding_Y;
 }
 
-.keycap{
-    color: $keycap_font_color;
-    font-size: $key_font_size;
-    background-color: $keycap_color;
-    border-radius: $keycap_radius;
-    margin-right: $keycap_space;
-    padding: $keycap_padding_X $keycap_padding_Y;
+.keycap {
+  color: $keycap_font_color;
+  font-size: $key_font_size;
+  background-color: $keycap_color;
+  border: $keycap_border;
+  border-radius: $keycap_radius;
+  margin-right: $keycap_space;
+  padding: $keycap_padding_X $keycap_padding_Y;
+  cursor: pointer;
 }

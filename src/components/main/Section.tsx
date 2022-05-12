@@ -1,5 +1,5 @@
-import Gameboard from "./Gameboard";
-import Keyboard from "./Keyboard";
+import Gameboard from "./gameboard/Gameboard";
+import Keyboard from "./keyboard/Keyboard";
 
 const Section = () => {
   return (
