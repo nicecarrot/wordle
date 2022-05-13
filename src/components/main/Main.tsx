@@ -1,7 +1,7 @@
 import Gameboard from "./gameboard/Gameboard";
 import Keyboard from "./keyboard/Keyboard";
 
-const Section = () => {
+const Main = () => {
   return (
     <>
       <Gameboard />
@@ -10,4 +10,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Main;

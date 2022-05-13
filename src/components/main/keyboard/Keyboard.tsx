@@ -1,4 +1,4 @@
-import styles from "../../styles/reusable/_key.module.scss";
+import styles from "../../../styles/reusable/_key.module.scss"
 import Keycap from "../../reusable/Keycap";
 import { KEYBOARD_TOP, KEYBOARD_MID, KEYBOARD_BOT } from "../../constants";
 
@@ -16,4 +16,6 @@ const Keyboard = () => {
   });
   return <div>{keygroup}</div>;
 };
+
+
 export default Keyboard;

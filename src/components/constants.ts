@@ -10,3 +10,5 @@ export const KEYBOARD_TOP: string[] = ["Q", "W", "E", "R", "T", "Y", "U", "I", "
 export const KEYBOARD_MID: string[] = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
 
 export const KEYBOARD_BOT: string[] = ["ENTER", "Z", "X", "C", "V", "B", "N", "M", "DELETE"];
+
+export const COUNTROW: string[] = ["1", "2", "3", "4", "5", "6"];

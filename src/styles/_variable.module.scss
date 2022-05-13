@@ -23,8 +23,10 @@ $keycap_space: 6px;
 
 //board
 $board_height: 50%;
+$board_gap: 5px;
 
 //tile
 $tile_color: hsl(0, 26%, 67%);
-$tile_width: 20px;
-$tile_height: 20px;
+$tile_width: 4rem;
+$tile_height: 4rem;
+$letter_size: 20px;

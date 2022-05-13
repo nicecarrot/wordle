@@ -1,14 +1,30 @@
-import styles from "../../../styles/main/_gamrboard.module.scss";
-import Emptyrow from "./Emptyrow";
-/*
-            TILLE을 하나 만들고 타일을 엮어서 한 행을 만들고
-            한 행을 엮어서 보드를 구성한다?
-*/
+import { useState } from "react";
+import styles from "../../../styles/main/_gameboard.module.scss";
+import { COUNTROW } from "../../constants";
+import { answer } from "../../reusable/answer";
+import Tile from "../../reusable/Tile";
+
+const Tilerow = () => {
+  return (
+    <div className={styles.row}>
+      <Tile idx={'0'} />
+      <Tile idx={'1'} />
+      <Tile idx={'2'} />
+      <Tile idx={'3'} />
+      <Tile idx={'4'} />
+    </div>
+  );
+};
 
 const Gameboard = () => {
+  const sol = answer[Math.floor(Math.random() * answer.length)];
+  
+  const [board, setBoard] = useState(COUNTROW);
   return (
     <div className={styles.container}>
-      <Emptyrow />
+      {COUNTROW.map((c) => {
+        return <Tilerow key={c}></Tilerow>;
+      })}
     </div>
   );
 };

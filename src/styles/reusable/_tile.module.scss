@@ -1,7 +1,12 @@
 @import "../variable.module";
 
 .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $tile_color;
     width: $tile_width;
     height: $tile_height;
+    text-transform: uppercase;
+    font-size: $letter_size;
 }

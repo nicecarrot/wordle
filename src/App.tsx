@@ -1,12 +1,13 @@
 import Header from "./components/header/Header";
-import Section from "./components/main/Section";
+import Main from "./components/main/Main";
+import { answer } from "./components/reusable/answer";
 
 function App() {
-
+  
   return (
     <>
       <Header />
-      <Section />
+      <Main />
     </>
   );
 }
