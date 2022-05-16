@@ -1,5 +1,6 @@
 import { BoxStatus } from "../constants";
 import Tile from "./Tile";
+import styles from "../../styles/reusable/_tile.module.scss"
 
 interface RowProps {
   word: string;
@@ -18,12 +19,12 @@ const Tilerow = ({ word, solution }: RowProps) => {
       return "absent";
     }
   };
-
+  
   return (
-    <div>
+    <div className={styles.row}>
       {Array.from(
-        Array(5).map((_, i) => (
-          <Tile key={i} letter={"Hello"} state={checkLetter(word[i], i)} />
+        Array(5).fill("").map((_, i) => (
+          <Tile key={i} letter={word[i]} state={checkLetter(word[i], i)} />
         ))
       )}
     </div>

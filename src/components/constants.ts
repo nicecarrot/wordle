@@ -42,5 +42,4 @@ export const KEYBOARD_BOT: string[] = [
   "\u232b",
 ];
 
-
 export type BoxStatus = "absent" | "present" | "correct" | "empty";

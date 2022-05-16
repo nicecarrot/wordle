@@ -26,7 +26,11 @@ $board_height: 50%;
 $board_gap: 5px;
 
 //tile
-$tile_color: hsl(0, 26%, 67%);
+$tile_color: hsl(0, 1%, 81%);
 $tile_width: 4rem;
 $tile_height: 4rem;
 $letter_size: 20px;
+$empty_color: hsl(0, 3%, 63%);
+$absent_color: hsl(255, 81%, 49%);
+$present_color: hsl(184, 93%, 56%);
+$correct_color: hsl(60, 100%, 50%);
