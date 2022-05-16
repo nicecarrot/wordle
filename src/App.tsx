@@ -1,6 +1,5 @@
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-import { answer } from "./components/reusable/answer";
 
 function App() {
   
@@ -12,4 +11,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

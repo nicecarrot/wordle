@@ -5,10 +5,42 @@ export const MENUBAR: string = "MENUBAR";
 export const LOGO: string = "Wordle";
 export const SETTING: string = "SETTING";
 
-export const KEYBOARD_TOP: string[] = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
+export const KEYBOARD_TOP: string[] = [
+  "Q",
+  "W",
+  "E",
+  "R",
+  "T",
+  "Y",
+  "U",
+  "I",
+  "O",
+  "P",
+];
 
-export const KEYBOARD_MID: string[] = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
+export const KEYBOARD_MID: string[] = [
+  "A",
+  "S",
+  "D",
+  "F",
+  "G",
+  "H",
+  "J",
+  "K",
+  "L",
+];
 
-export const KEYBOARD_BOT: string[] = ["ENTER", "Z", "X", "C", "V", "B", "N", "M", "DELETE"];
+export const KEYBOARD_BOT: string[] = [
+  "ENTER",
+  "Z",
+  "X",
+  "C",
+  "V",
+  "B",
+  "N",
+  "M",
+  "\u232b",
+];
 
-export const COUNTROW: string[] = ["1", "2", "3", "4", "5", "6"];
+
+export type BoxStatus = "absent" | "present" | "correct" | "empty";

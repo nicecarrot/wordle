@@ -1,10 +1,10 @@
-import Gameboard from "./gameboard/Gameboard";
+import Board from "./board/Board";
 import Keyboard from "./keyboard/Keyboard";
 
 const Main = () => {
   return (
     <>
-      <Gameboard />
+      <Board />
       <Keyboard />
     </>
   );

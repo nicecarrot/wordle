@@ -17,3 +17,15 @@
   padding: $keycap_padding_X $keycap_padding_Y;
   cursor: pointer;
 }
+
+.keycap-strike{
+  background-color: aquamarine;
+}
+
+.keycap-ball{
+  background-color: rgb(245, 255, 105);
+}
+
+.keycap-out{
+  background-color: rgb(111, 111, 111);
+}

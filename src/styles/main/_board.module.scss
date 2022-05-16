@@ -3,12 +3,9 @@
 .container{
     display: grid;
     justify-content: center;
+    height: 50%;
     align-items: center;
     grid-gap: $board_gap;
     box-sizing: border-box;
 }
 
-.row {
-    display: flex;
-    gap: $board_gap;
-}

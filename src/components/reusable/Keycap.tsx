@@ -1,6 +1,5 @@
 import styles from "../../styles/reusable/_key.module.scss";
 
-
 interface KeycapProps {
   char: string;
 }
