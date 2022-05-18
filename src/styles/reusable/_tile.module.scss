@@ -17,18 +17,29 @@
 
 .absent{
     background-color: $absent_color;
+    animation: flip-diagonal-2-br 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) alternate-reverse forwards;
 }
 
 .correct{
-
     background-color: $correct_color;
+    animation: flip-diagonal-2-br 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) alternate-reverse forwards;
 }
 
 .present{
     background-color: $present_color;
+    animation: flip-diagonal-2-br 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) alternate-reverse forwards;
 }
 
 .row {
     display: flex;
     gap: $board_gap;
 }
+
+@keyframes flip-diagonal-2-br {
+    0% {
+      transform: rotate3d(-1, 1, 0, 0deg);
+    }
+    100% {
+      transform: rotate3d(-1, 1, 0, 180deg);
+    }
+  }

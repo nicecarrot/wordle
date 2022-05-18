@@ -6,10 +6,12 @@ const KEYARRAY = [KEYBOARD_TOP, KEYBOARD_MID, KEYBOARD_BOT];
 
 const Keyboard = () => {
   const keyboard = KEYARRAY.map((row, idx: number) => (
-    <div key={idx} className={styles.keyboard_row}>
-      {row.map((char: string, idx: number) => {
-        return <Keycap char={char} key={idx}></Keycap>;
-      })}
+    <div className={styles.keyboard_container}>
+      <div key={idx} className={styles.keyboard_row}>
+        {row.map((char: string, idx: number) => {
+          return <Keycap char={char} key={idx}></Keycap>;
+        })}
+      </div>
     </div>
   ));
   return <div>{keyboard}</div>;

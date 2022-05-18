@@ -10,7 +10,9 @@ $header_background_color: hsl(118, 61%, 82%);
 $border_color: hsl(118, 61%, 82%);
 
 //key
-$key_padding_Y: 1rem;
+$keyboard_height: 2rem;
+$key_padding_X: 0rem;
+$key_padding_Y: .5rem;
 
 $key_font_size: 1rem;
 $keycap_border: 0px;
@@ -19,11 +21,14 @@ $keycap_padding_X: 1rem;
 $keycap_padding_Y: 1rem;
 $keycap_color: hsl(214, 9%, 84%);
 $keycap_font_color: hsl(0, 0%, 0%);
-$keycap_space: 6px;
+$keycap_space: 1rem;
+$keycap_min_width: 3em;
+
 
 //board
 $board_height: 50%;
-$board_gap: 5px;
+$board_gap: .3rem;
+$board_padding: 2rem;
 
 //tile
 $tile_color: hsl(0, 1%, 81%);

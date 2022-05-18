@@ -66,7 +66,7 @@ export const KEYS: string[] = [
   "u",
   "v",
   "w",
-  "s",
+  "x",
   "y",
   "z",
 ];

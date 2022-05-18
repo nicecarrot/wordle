@@ -53,7 +53,7 @@ const Board = () => {
   const onEnter = (letter: string) => {
     /* 5글자를 충족하지 못한 경우 */
     if (letter.length < 5) {
-      console.log("Not enough letters");
+      alert("Not enough letters");
     }
     else if (wordList.includes(letter)) {
     /* 사전에 있는 단어인지 검사 */
@@ -67,11 +67,12 @@ const Board = () => {
       /* turn이 6턴을 넘어가게 되면 게임오버*/
       if(turn >= 6){
         setGameState("Defeat");
-        console.log("GameOver");
+        alert("GameOver");
       }
       /* 단어를 썼으니 턴을 소모하고 다음 행으로 넘어가기 */
       if(gameState === "Defeat"){
-        
+        /* 여기다가 Modal 띄워주면 되겠지 */
+        return;
       }
       else{
         setTurn(turn + 1);
@@ -83,7 +84,7 @@ const Board = () => {
       
 
     } else {
-      console.log("Not in wordlist");
+      alert("Not in wordlist");
     }
   };
   /* keydown 이벤트 window에 부착 */
@@ -91,7 +92,6 @@ const Board = () => {
 
   return (
     <div className={styles.container}>
-      <span> {randomWord} </span>
       {completedWord.map((word, i) => (
         <Completerow word={word} solution={randomWord} key={i}/>
       ))}
