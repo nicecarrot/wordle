@@ -7,7 +7,7 @@ interface RowProps {
   solution: string;
 }
 
-const Tilerow = ({ word, solution }: RowProps) => {
+const Completerow = ({ word, solution }: RowProps) => {
   const checkLetter = (letter: string, pos: number): BoxStatus => {
     if (solution.includes(letter)) {
       if (solution[pos] === letter) {
@@ -31,4 +31,4 @@ const Tilerow = ({ word, solution }: RowProps) => {
   );
 };
 
-export default Tilerow;
+export default Completerow;

@@ -42,4 +42,39 @@ export const KEYBOARD_BOT: string[] = [
   "\u232b",
 ];
 
-export type BoxStatus = "absent" | "present" | "correct" | "empty";
+export const KEYS: string[] = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "s",
+  "y",
+  "z",
+];
+
+export type BoxStatus = "absent" | "present" | "correct" | "empty" | "edit";
+
+export type GameStatus = "Victory" | "Defeat" | "Playing";
+
+export const COMPLETE_WORD: string[] = [];
+
+export const CHANCE: number = 6;

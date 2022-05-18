@@ -4,12 +4,6 @@ import { KEYBOARD_TOP, KEYBOARD_MID, KEYBOARD_BOT } from "../../constants";
 
 const KEYARRAY = [KEYBOARD_TOP, KEYBOARD_MID, KEYBOARD_BOT];
 
-const handleKey = (event: KeyboardEvent) => {
-  const letter = event.key;
-  
-
-}
-
 const Keyboard = () => {
   const keyboard = KEYARRAY.map((row, idx: number) => (
     <div key={idx} className={styles.keyboard_row}>
