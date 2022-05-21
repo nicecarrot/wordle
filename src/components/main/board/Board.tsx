@@ -92,8 +92,9 @@ const Board = () => {
 
   return (
     <div className={styles.container}>
+      <span>{randomWord}</span>
       {completedWord.map((word, i) => (
-        <Completerow word={word} solution={randomWord} key={i}/>
+        <Completerow word={word} solution={randomWord}key={i}/>
       ))}
       { gameState !== "Playing" ? null : <Currentrow word={currentWord} /> }
       { gameState === "Defeat" ? null : Array.from(Array(CHANCE - turn)).map((_, i) => <Emptyrow key={i}/>)}

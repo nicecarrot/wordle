@@ -3,7 +3,7 @@
 .container{
     display: grid;
     justify-content: center;
-    height: 50%;
+    height: $board_height;
     align-items: center;
     grid-gap: $board_gap;
     box-sizing: border-box;

@@ -1,7 +1,6 @@
 @import "../variable.module";
 
 .keyboard_container{
-  height: 50%;
   padding-top: 3rem;
 }
 
@@ -9,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: $key_padding_X $key_padding_Y;
   height: $keyboard_height;
 }
 

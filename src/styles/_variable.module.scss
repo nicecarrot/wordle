@@ -10,9 +10,7 @@ $header_background_color: hsl(118, 61%, 82%);
 $border_color: hsl(118, 61%, 82%);
 
 //key
-$keyboard_height: 2rem;
-$key_padding_X: 0rem;
-$key_padding_Y: .5rem;
+$keyboard_height: 1rem;
 
 $key_font_size: 1rem;
 $keycap_border: 0px;
@@ -26,9 +24,9 @@ $keycap_min_width: 3em;
 
 
 //board
-$board_height: 50%;
+$board_height: 65vh;
 $board_gap: .3rem;
-$board_padding: 2rem;
+$board_padding: 5rem;
 
 //tile
 $tile_color: hsl(0, 1%, 81%);
