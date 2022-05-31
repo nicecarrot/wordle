@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <>
       <Board />
-      <Keyboard />
+      {/* <Keyboard /> */}
     </>
   );
 };

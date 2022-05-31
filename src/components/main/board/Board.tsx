@@ -4,6 +4,7 @@ import { COMPLETE_WORD, KEYS, CHANCE, GameStatus } from "../../constants";
 import Completerow from "../../reusable/Completerow";
 import Currentrow from "../../reusable/Currentrow";
 import Emptyrow from "../../reusable/Emptyrow";
+import Modal from "../../reusable/Modal";
 import { useWindow } from "../../reusable/useWindow";
 import { wordList } from "../../reusable/wordList";
 
@@ -20,8 +21,6 @@ const Board = () => {
   const [gameState, setGameState] = useState<GameStatus>("Playing");
 
   const handleKeyDown = (event: KeyboardEvent) => {
-    const letter = event.key;
-
     /* delete는 버튼이 눌리고, currentWord가 0보다 클 때만 작동 */
     if (event.key === "Backspace" && currentWord.length > 0) {
       onDelete();
@@ -54,35 +53,33 @@ const Board = () => {
     /* 5글자를 충족하지 못한 경우 */
     if (letter.length < 5) {
       alert("Not enough letters");
-    }
-    else if (wordList.includes(letter)) {
-    /* 사전에 있는 단어인지 검사 */
+    } else if (wordList.includes(letter)) {
+      /* 사전에 있는 단어인지 검사 */
       /* 정답을 맞춘경우 */
       if (letter === randomWord) {
         setCompletedWord([...completedWord, letter]);
         setCurrentWord("");
         setGameState("Victory");
+        alert("Victory!!");
         return;
       }
       /* turn이 6턴을 넘어가게 되면 게임오버*/
-      if(turn >= 6){
+      if (turn >= 6) {
         setGameState("Defeat");
         alert("GameOver");
+        alert("answer is " + randomWord.toUpperCase());
       }
       /* 단어를 썼으니 턴을 소모하고 다음 행으로 넘어가기 */
-      if(gameState === "Defeat"){
+      if (gameState === "Defeat") {
         /* 여기다가 Modal 띄워주면 되겠지 */
         return;
-      }
-      else{
+      } else {
         setTurn(turn + 1);
       }
       /* 지금 쓴 단어는 완료한 단어목록에 저장 */
       setCompletedWord([...completedWord, letter]);
       /* currentWord 초기화 */
       setCurrentWord("");
-      
-
     } else {
       alert("Not in wordlist");
     }
@@ -92,12 +89,13 @@ const Board = () => {
 
   return (
     <div className={styles.container}>
-      <span>{randomWord}</span>
       {completedWord.map((word, i) => (
-        <Completerow word={word} solution={randomWord}key={i}/>
+        <Completerow word={word} solution={randomWord} key={i} />
       ))}
-      { gameState !== "Playing" ? null : <Currentrow word={currentWord} /> }
-      { gameState === "Defeat" ? null : Array.from(Array(CHANCE - turn)).map((_, i) => <Emptyrow key={i}/>)}
+      {gameState !== "Playing" ? null : <Currentrow word={currentWord} />}
+      {gameState === "Defeat"
+        ? null
+        : Array.from(Array(CHANCE - turn)).map((_, i) => <Emptyrow key={i} />)}
     </div>
   );
 };
