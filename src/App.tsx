@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <Header />
-      <div id="portal"></div>
       <Main />
     </>
   );
