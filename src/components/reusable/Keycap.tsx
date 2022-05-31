@@ -6,6 +6,10 @@ interface KeycapProps {
   state?: BoxStatus;
 }
 
+const handleKeybutton = (letter: string) => {
+  return console.log(letter);
+};
+
 const Keycap = ({ char }: KeycapProps) => {
   return <button className={`${styles.keycap}`}>{char}</button>;
 };
