@@ -74,7 +74,7 @@ Todo List
 
 
 <h2 id='library'>라이브러리</h2>
-![image](https://user-images.githubusercontent.com/81793748/215048476-a56f378b-7454-4832-afdf-4b3acf63d82d.png)
+<img src=https://user-images.githubusercontent.com/81793748/215048476-a56f378b-7454-4832-afdf-4b3acf63d82d.png> </img>
 
 <h2 id='structure'>폴더 구조</h2>
 <pre>
