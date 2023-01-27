@@ -29,7 +29,6 @@
 
 
 <h2 id='overview'>Overview</h2>
-<video src='https://user-images.githubusercontent.com/57670160/214036194-ff9b92d6-5226-429a-b024-5f6a5653825d.mov'></video>
 
 <h2 id='run'>환경설정 및 실행</h2>
 
@@ -75,7 +74,7 @@ Todo List
 
 
 <h2 id='library'>라이브러리</h2>
-<img width="344" alt="image" src="https://user-images.githubusercontent.com/57670160/214060689-7d56173f-19fe-4eae-b1c5-9462ec682831.png">
+![image](https://user-images.githubusercontent.com/81793748/215048476-a56f378b-7454-4832-afdf-4b3acf63d82d.png)
 
 <h2 id='structure'>폴더 구조</h2>
 <pre>
