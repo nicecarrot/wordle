@@ -126,15 +126,15 @@ Todo List
                 _tile.module.scss</pre>
 
 <h2 id='agonize'>고민한 부분</h2>
-solution === testy이고
-answer가 tatty일 때 
+정답 검사 시, correct, present, absent 3가지 상태가 존재하는데
+solution이 testy이고 answer가 tatty일 때 
 c a p a c 상태가 된다 c a a c c 여야하는데
 correct를 먼저 계산하게 해야 할까?
-우선순위를 설정해야한다.
+우선순위를 설정해야겠다.
 
 <h2 id='improve'>개선사항</h2>
 ##이미 지나간 단어는 안하는 방법
-replace 넣어줬음
+replace를 넣어주었고,
 solution.replace(letter, " ")
 여기서 완전 공백("")으로 해주면 solution의 길이 자체가 줄어서 비교가 안 된다.
 " " 로 해줘서 문자열 길이 유지해주자.
