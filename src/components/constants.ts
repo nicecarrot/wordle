@@ -78,3 +78,9 @@ export type GameStatus = "Victory" | "Defeat" | "Playing";
 export const COMPLETE_WORD: string[] = [];
 
 export const CHANCE: number = 6;
+
+export const API: string = "https://random-word-api.herokuapp.com";
+
+export const LENGTH: number = 5;
+
+export const API_KEY: string = "a545c7ed6cmshfc19ba1098f7b67p1a5cc0jsn442a582de082";

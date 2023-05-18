@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { createPortal } from "react-dom";
 import styles from "../../styles/reusable/_modal.module.scss";
 

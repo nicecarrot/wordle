@@ -6,7 +6,7 @@ interface RowProps {
   word: string;
   solution: string;
 }
-
+// error 발견, 정답에 같은 문자가 2개 있을 때, correct나 present가 되지 않음
 const Completerow = ({ word, solution }: RowProps) => {
   const checkLetter = (pos: number): BoxStatus => {
     let checkPoint = [0, 0, 0, 0, 0];
