@@ -8,6 +8,7 @@ interface CurrentrowProps {
 const Currentrow = ({ word }: CurrentrowProps) => {
   return (
     <div className={styles.row}>
+      
       {word.split("").map((letter, i) => (
         <Tile key={i} letter={letter} state="edit" />
       ))}

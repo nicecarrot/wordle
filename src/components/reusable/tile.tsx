@@ -7,6 +7,15 @@ interface TileProps {
 }
 
 const Tile = ({ letter, state }: TileProps) => {
-  return <div className={`${styles.tile} ${styles[state]}`}>{letter}</div>;
+  return (
+    <div
+      id="tile"
+      className={`${styles.tile} ${styles[state]} ${
+        letter ? styles.inject : ""
+      }`}
+    >
+      {letter}
+    </div>
+  );
 };
 export default Tile;

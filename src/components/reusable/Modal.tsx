@@ -2,16 +2,15 @@ import { createPortal } from "react-dom";
 import styles from "../../styles/reusable/_modal.module.scss";
 
 interface ModalProps {
-  gameState: string;
+  message: string;
 }
 
-const Modal = ({gameState}: ModalProps) => {
+const Modal = ({ message}: ModalProps) => {
   const portal =
-    gameState === "undefined" &&
-    (document.getElementById("portal") as HTMLElement);
+    document.getElementById("portal") as HTMLElement;
 
   return portal
-    ? createPortal(<div className={styles.modal}>something</div>, portal)
+    ? createPortal(<div className={`${styles.modal_container}`}>{message}</div>, portal)
     : null;
 };
 

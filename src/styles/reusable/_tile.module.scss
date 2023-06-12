@@ -9,6 +9,12 @@
     height: $tile_height;
     text-transform: uppercase;
     font-size: $letter_size;
+    font-weight: bold;
+    border: 2px solid #121212;
+}
+
+.inject{
+    animation: zoomInOut 0.3s ease-in-out;
 }
 
 .empty{
@@ -43,3 +49,15 @@
       transform: rotate3d(-1, 1, 0, 180deg);
     }
   }
+
+  @keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
