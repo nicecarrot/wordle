@@ -1,9 +1,7 @@
 /* 헤더 영역에 쓸 상수를 적는다 
     상수니까 다 대문자로 쓰는게 좋다.
 */
-export const MENUBAR: string = "MENUBAR";
 export const LOGO: string = "Wordle";
-export const SETTING: string = "SETTING";
 
 export const KEYBOARD_TOP: string[] = [
   "Q",
