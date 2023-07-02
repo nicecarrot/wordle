@@ -12,6 +12,7 @@
   "dependencies": {
     "@mdi/js": "^7.2.96",
     "@mdi/react": "^1.6.1",
+    "@types/node": "^20.3.3",
     "axios": "^1.4.0",
     "gh-pages": "^5.0.0",
     "node-sass": "^7.0.1",
@@ -19,7 +20,8 @@
     "react-dom": "^18.0.0",
     "sass": "^1.51.0",
     "scss": "^0.2.4",
-    "sweetalert2": "^11.7.12"
+    "sweetalert2": "^11.7.12",
+    "vite-svg-loader": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
