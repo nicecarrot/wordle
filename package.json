@@ -19,8 +19,7 @@
     "react-dom": "^18.0.0",
     "sass": "^1.51.0",
     "scss": "^0.2.4",
-    "sweetalert2": "^11.7.12",
-    "vte": "^1.0.0"
+    "sweetalert2": "^11.7.12"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
@@ -29,7 +28,5 @@
     "typescript": "^4.6.3",
     "vite": "^2.9.10"
   },
-  
   "homepage": "https://nicecarrot.github.io/wordle/"
-  
 }

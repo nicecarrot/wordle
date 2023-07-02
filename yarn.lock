@@ -2556,11 +2556,6 @@ vite@^2.9.10:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vte@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vte/-/vte-1.0.0.tgz#6a83bcdaea5a836b7a12a79cc025dd5ba312e68a"
-  integrity sha512-skZsSdrfIFsdwnJcA3h/cXjkX48zNBRil2meKHuRIqzMO5JgXJzyHlXfVvKOySkNFdIHdYvgj2nrJusIWfY4kA==
-
 which@^2.0.1, which@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/which/-/which-2.0.2.tgz#7c6a8dd0a636a0327e10b59c9286eee93f3f51b1"
