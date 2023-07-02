@@ -1,9 +1,6 @@
-/* 헤더 영역에 쓸 상수를 적는다 
-    상수니까 다 대문자로 쓰는게 좋다.
-*/
-export const LOGO: string = "Wordle";
+const LOGO: string = "Wordle";
 
-export const KEYBOARD_TOP: string[] = [
+const KEYBOARD_TOP: string[] = [
   "Q",
   "W",
   "E",
@@ -16,7 +13,7 @@ export const KEYBOARD_TOP: string[] = [
   "P",
 ];
 
-export const KEYBOARD_MID: string[] = [
+const KEYBOARD_MID: string[] = [
   "A",
   "S",
   "D",
@@ -28,7 +25,7 @@ export const KEYBOARD_MID: string[] = [
   "L",
 ];
 
-export const KEYBOARD_BOT: string[] = [
+const KEYBOARD_BOT: string[] = [
   "ENTER",
   "Z",
   "X",
@@ -40,7 +37,7 @@ export const KEYBOARD_BOT: string[] = [
   "\u232b",
 ];
 
-export const KEYS: string[] = [
+const KEYS: string[] = [
   "a",
   "b",
   "c",
@@ -69,16 +66,19 @@ export const KEYS: string[] = [
   "z",
 ];
 
-export type BoxStatus = "absent" | "present" | "correct" | "empty" | "edit";
+type BoxStatus = "absent" | "present" | "correct" | "empty" | "edit";
 
-export type GameStatus = "Victory" | "Defeat" | "Playing";
+type GameStatus = "Victory" | "Defeat" | "Playing";
 
-export const COMPLETE_WORD: string[] = [];
+const COMPLETE_WORD: string[] = [];
 
-export const CHANCE: number = 6;
+const CHANCE: number = 6;
 
-export const API: string = "https://random-word-api.herokuapp.com";
+const API: string = "https://random-word-api.herokuapp.com";
 
-export const LENGTH: number = 5;
+const LENGTH: number = 5;
 
-export const API_KEY: string = "a545c7ed6cmshfc19ba1098f7b67p1a5cc0jsn442a582de082";
+const API_KEY: string = "a545c7ed6cmshfc19ba1098f7b67p1a5cc0jsn442a582de082";
+
+export { LOGO, KEYBOARD_TOP, KEYBOARD_MID, KEYBOARD_BOT, KEYS, COMPLETE_WORD, CHANCE, API, LENGTH, API_KEY };
+export type { BoxStatus, GameStatus };
