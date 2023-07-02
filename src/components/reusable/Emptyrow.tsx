@@ -1,4 +1,4 @@
-import Tile from "./Tile"
+import Tile from "./Tile";
 import styles from "../../styles/reusable/_tile.module.scss"
 
 const Emptyrow = () => {
